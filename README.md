@@ -1,1 +1,3 @@
-whoo
+LICENSE:
+
+MIT License
