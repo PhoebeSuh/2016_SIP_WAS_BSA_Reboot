@@ -24,6 +24,17 @@ h2{
     background-color: yellow;
 }
 
+h3{
+    font-size: 24px;
+    font-family: "Helvetica";
+    color: black;
+}
+
+h4{
+    font-size: 16px;
+    font-family: "Helvetica";
+}
+
 p{
     font-family: "Gill Sans MT";
     font-size: 36px;
@@ -170,7 +181,7 @@ ul{
 .billboard_text{
 	text-align:left;
     margin-right: 50px;
-	font-size: 56px;
+	font-size: 72px;
 	padding-top: 100px;
 	padding-left: 10px;
 	padding-right:10px;
@@ -258,4 +269,10 @@ color: white;
     background-color: #001A7A;
     padding-top: 50px;
 
+}
+
+#map{
+    width: 90%;
+    height: 500px;
+    margin: 50px;
 }
