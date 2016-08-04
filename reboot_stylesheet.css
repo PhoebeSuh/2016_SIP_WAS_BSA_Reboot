@@ -135,8 +135,8 @@ ul{
 #logo{
     width: 40%;
     height: 40%;
-    padding-left: 450px;
-    padding-right: 360px;
+    padding-left: 430px;
+    padding-right: 380px;
     vertical-align: text-top;
     overflow: hidden;
     background-color: #001A7A;
@@ -146,7 +146,7 @@ ul{
     width: 100%;
     height:75px;
     text-align: center;
-    background-color: #001A7A;
+    background-color: #001a7a;
     padding-top: 25px;
     padding-left: 10px;
     color:white;
@@ -190,7 +190,12 @@ ul{
     padding-bottom: 30px;
     padding-right: 100px;
     padding-left: 100px;
-    background-color: #001A7A;
+    background-color: #001a7a;
+
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .paragraph{
@@ -202,64 +207,6 @@ ul{
 	height: 75%;
 	width: 75%;
 }
-
-
-
-
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #001A7A;
-    color: white;
-    margin-top: -25px;
-    padding-top: 26px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #001A7A;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 255px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    position: absolute;
-    z-index:99;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
-
-
 
 .footertext {
       display: block;
