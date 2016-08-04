@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="reboot_stylesheet.css">
+	<head>
+		<title>Reboot: Power up</title>
+		<div id="logo_div">
+			<a href="reboot_base_html.html"><img id="logo" src="logo.jpeg" alt="The Reboot logo: a computer's power button"></a>
+		</div>
+		<div class="menu">
+			<ul>
+
+				<li>
+					<a href="reboot_map.html" class="header_text">Help near me</a>
+				</li>
+
+				<li>
+					<a href="#" class="header_text">Online Resources</a>
+				</li>
+
+				<li>
+					<a href="#"  class="header_text">About us</a>
+				</li>
+
+				<li>
+					<a href="reboot_faq.html" class="header_text">FAQ</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</head>
+	<body>
+		<h1>DC LGBTQ Resources</h1>
+		<div id="map"></div>
+	    <script>
+	      function initMap() {
+	        var mapDiv = document.getElementById('map');
+	        var myLatLng = {lat: 38.895108, lng: -77.036548};
+	        var map = new google.maps.Map(mapDiv, {
+	            center: myLatLng,
+	            zoom: 12,
+	        });
+
+	        var contentString1 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.thedccenter.org/">The DC Center for the LGBT Community</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '</div>'+
+	            '</div>';
+	        
+	        var infowindow1 = new google.maps.InfoWindow({
+	          content: contentString1
+	        });
+
+	        var marker1 = new google.maps.Marker({
+	            position: {lat:38.917570, lng:-77.032549},
+	            map: map,
+	        });
+
+	        marker1.addListener('click', function() {
+	          infowindow1.open(map, marker1);
+	        });
+	        
+	      }
+	    </script>
+	    <script async defer
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIvck2MC_ZjkeP-CKgYf2LDmIeuQnN7ho&callback=initMap">
+	    </script>
+
+
+			
+	
+
+	</body>
+</html>
