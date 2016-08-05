@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="reboot_stylesheet.css">
+	<head>
+		<title>Reboot: Power up</title>
+		<div id="logo_div">
+			<a href="reboot_base_html.html"><img id="logo" src="logo.jpeg" alt="The Reboot logo: a computer's power button"></a>
+		</div>
+		<div class="menu">
+			<ul>
+
+				<li>
+					<a href="reboot_map.html" class="header_text">Help near me</a>
+				</li>
+
+				<li>
+					<a href="#" class="header_text">Online Resources</a>
+				</li>
+
+				<li>
+					<a href="#"  class="header_text">About us</a>
+				</li>
+
+				<li>
+					<a href="reboot_faq.html" class="header_text">FAQ</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</head>
+	<body>
+		<h5>DC Depression Resources</h5>
+		<div id="map"></div>
+	    <script>
+	      function initMap() {
+	        var mapDiv = document.getElementById('map');
+	        var myLatLng = {lat: 38.895108, lng: -77.036548};
+	        var map = new google.maps.Map(mapDiv, {
+	            center: myLatLng,
+	            zoom: 13,
+	        });
+
+	        var contentString1 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h3 id="firstHeading" class="firstHeading"><a href="http://thewomenscenter.org/">The Womens Center</a></h3>'+
+	            '<div id="bodyContent">'+
+	            '<h4>1025 Vermont Ave NW, Suite 310</h4>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString2 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h3 id="firstHeading" class="firstHeading"><a href="https://meltzercenter.wordpress.com/">The Meltzer Center</a></h3>'+
+	            '<div id="bodyContent">'+
+	            '<h4>2125 G St NW</h4>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString3 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h3 id="firstHeading" class="firstHeading"><a href="http://mcclendoncenter.org/">The McClendon Center</a></h3>'+
+	            '<div id="bodyContent">'+
+	            '<h4>1338 North Capitol Street NW</h4>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString4 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h3 id="firstHeading" class="firstHeading"><a href="http://www.namidc.org/">National Alliance on Mental Illness</a></h3>'+
+	            '<div id="bodyContent">'+
+	            '<h4>422 8th St SE< br> 2nd Floor</h4>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString5 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h3 id="firstHeading" class="firstHeading"><a href="http://dbh.dc.gov/service/emergency-psychiatric-services">Department of Behavioral Health Emergency Psychiatric Services<br> </a></h3>'+
+	            '<div id="bodyContent">'+
+	            '<h4>DC General Hospital Compound <br>Building 14 <br>1905 E Street, SE</h4>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString6 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h3 id="firstHeading" class="firstHeading"><a href="http://www.dcmentalhealthamerica.org/">Mental Health America</a></h3>'+
+	            '<div id="bodyContent">'+
+	            '<h4>530 College St NW</h4>'+
+	            '</div>'+
+	            '</div>';
+	        
+	        var infowindow1 = new google.maps.InfoWindow({
+	          content: contentString1
+	        });
+			var infowindow2 = new google.maps.InfoWindow({
+	          content: contentString2
+	        });
+	        var infowindow3 = new google.maps.InfoWindow({
+	          content: contentString3
+	        });
+	        var infowindow4 = new google.maps.InfoWindow({
+	          content: contentString4
+	        });
+	        var infowindow5 = new google.maps.InfoWindow({
+	          content: contentString5
+	        });
+	        var infowindow6 = new google.maps.InfoWindow({
+	          content: contentString6
+	        });
+		
+	        var marker1 = new google.maps.Marker({
+	            position: {lat:38.903300, lng:-77.032915},
+	            map: map,
+	        });
+	        var marker2 = new google.maps.Marker({
+	            position: {lat:38.898673, lng:-77.047857
+},
+	            map: map,
+	        });
+	        var marker3 = new google.maps.Marker({
+	            position: {lat:38.908421, lng:-77.009365},
+	            map: map,
+	        });
+	        var marker4 = new google.maps.Marker({
+	            position: {lat:38.883091, lng:-76.994668},
+	            map: map,
+	        });
+	        var marker5 = new google.maps.Marker({
+	            position: {lat:38.882816, lng:-76.977204},
+	            map: map,
+	        });
+	        var marker6 = new google.maps.Marker({
+	            position: {lat:38.921181, lng:-77.019929},
+	            map: map,
+	        });
+
+	        marker1.addListener('click', function() {
+	          infowindow1.open(map, marker1);
+	        });
+	        marker2.addListener('click', function() {
+	          infowindow2.open(map, marker2);
+	        });
+	        marker3.addListener('click', function() {
+	          infowindow3.open(map, marker3);
+	        });
+	        marker4.addListener('click', function() {
+	          infowindow4.open(map, marker4);
+	        });
+	        marker5.addListener('click', function() {
+	          infowindow5.open(map, marker5);
+	        });
+	        marker6.addListener('click', function() {
+	          infowindow6.open(map, marker6);
+	        });
+	      }
+	    </script>
+	    <script async defer
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIvck2MC_ZjkeP-CKgYf2LDmIeuQnN7ho&callback=initMap">
+	    </script>
+
+
+			
+	
+
+	</body>
+</html>
