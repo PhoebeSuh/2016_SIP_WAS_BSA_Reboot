@@ -48,18 +48,35 @@
 	            '<div id="bodyContent">'+
 	            '</div>'+
 	            '</div>';
+	        var contentString2 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.casaruby.org/">Casa Ruby</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '</div>'+
+	            '</div>';
 	        
 	        var infowindow1 = new google.maps.InfoWindow({
 	          content: contentString1
 	        });
-
+		var infowindow2 = new google.maps.InfoWindow({
+	          content: contentString2
+	        });
+		
 	        var marker1 = new google.maps.Marker({
 	            position: {lat:38.917570, lng:-77.032549},
+	            map: map,
+	        });
+	        var marker2 = new google.maps.Marker({
+	            position: {lat:38.926752, lng:-77.023182},
 	            map: map,
 	        });
 
 	        marker1.addListener('click', function() {
 	          infowindow1.open(map, marker1);
+	        });
+	        marker2.addListener('click', function() {
+	          infowindow2.open(map, marker2);
 	        });
 	        
 	      }
