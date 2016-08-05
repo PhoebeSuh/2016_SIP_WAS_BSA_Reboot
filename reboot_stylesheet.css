@@ -38,6 +38,21 @@ h4{
     color:black;
 }
 
+h5{
+    font-size:90px;
+    font-weight: normal;
+    font-family: "Gill Sans MT";
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    margin-top:0px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
 p{
     font-family: "Gill Sans MT";
     font-size: 36px;
@@ -58,20 +73,6 @@ ul{
     position: relative;
 }
 
-#red_line{
-    background-color: red;
-    height: 72px;
-    padding-left: 40%;
-    padding-right: 40.8%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    color: white;
-    font-weight: normal;
-    font-family: "Gill Sans MT";
-    font-size: 64px;
-    text-decoration: none;
-}
 #sexual_assault{
     background-color: yellow;
     height: 72px;
@@ -110,36 +111,6 @@ ul{
     padding-bottom: 40px;
     text-align: center;
     color: black;
-    font-weight: normal;
-    font-family: "Gill Sans MT";
-    font-size: 64px;
-    text-decoration: none;
-}
-
-#blue_line{
-    background-color: #07149E;
-    height: 72px;
-    padding-left: 40%;
-    padding-right: 40%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    color: white;
-    font-weight: normal;
-    font-family: "Gill Sans MT";
-    font-size: 64px;
-    text-decoration: none;
-}
-
-#green_line{
-    background-color: #31C600;
-    height: 72px;
-    padding-left: 38%;
-    padding-right: 38%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    color: white;
     font-weight: normal;
     font-family: "Gill Sans MT";
     font-size: 64px;
@@ -276,6 +247,7 @@ color: white;
 
 #map{
     width: 90%;
-    height: 500px;
-    margin: 50px;
+    height: 550px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
