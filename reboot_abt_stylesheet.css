@@ -351,22 +351,11 @@ ul{
     font-weight: bold;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
-  background-size: cover;
-  height:100%;
-}
 
 #feedback-page{
 	text-align:center;
 }
 
-#form-main{
-	width:100%;
-	float:left;
-	padding-top:0px;
-}
 
 #form-div {
 	background-color:rgba(72,72,72,0.4);
@@ -374,31 +363,21 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
+	width: 95%;
 	float: left;
-	left: 50%;
 	position: absolute;
-  margin-top:30px;
-	margin-left: -260px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
+    margin-top:30px;
+
 }
 
 .feedback-input {
 	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+	font-family: 'Gill Sans MT';
 	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
+	background-color: white;
 	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
+	margin-bottom: 0px;
+	width:500px;
   border: 3px solid rgba(0,0,0,0);
 }
 
@@ -465,12 +444,11 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-#button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+#button-blue {
+	font-family: 'Gill Sans MT';
 	float:left;
-	width: 100%;
+	width: 500px;
 	border: #fbfbfb solid 4px;
-	cursor:pointer;
 	background-color: #3498db;
 	color:white;
 	font-size:24px;
@@ -479,8 +457,6 @@ input:focus, textarea:focus {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
 }
 
 #button-blue:hover{
@@ -491,22 +467,7 @@ input:focus, textarea:focus {
 .submit:hover {
 	color: #3498db;
 }
-	
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
-}
 
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
-}
 
 @media only screen and (max-width: 580px) {
 	#form-div{
