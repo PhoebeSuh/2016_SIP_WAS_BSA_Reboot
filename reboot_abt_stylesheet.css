@@ -518,3 +518,27 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
+
+
+.footertext {
+      display: block;
+font-size: 18px;
+color: white;
+}
+.donatebar {
+  position: static;
+  height: 45px;
+  width: 100%;
+  bottom: 122px;
+  padding: 25px 0px 25px 0px;
+  background-color: #001A7A;
+  text-align: center;
+}
+
+.donatebar h1{
+    text-align: left;
+    margin-left: 60px;
+    display: inline;
+    font-size:40px;
+    color: white;
+}
