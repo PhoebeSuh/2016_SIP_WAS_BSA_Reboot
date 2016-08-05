@@ -160,17 +160,19 @@ ul{
 
 
 
-
-
+.footertext {
+    display: block;
+    font-size: 18px;
+    color: white;
+}
 
 .donatebar {
-  position: absolute;
+  position: static;
   height: 45px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 25px;
-  background-color: #FCEC52;
+  width: 100%;
+  bottom: 122px;
+  padding: 25px 0px 25px 0px;
+  background-color: #001A7A;
   text-align: center;
 }
 
@@ -178,21 +180,37 @@ ul{
     text-align: left;
     margin-left: 60px;
     display: inline;
+    font-size:40px;
+    color: white;
 }
 
 .button {
-    background-color: #FCEC52; 
-    border: 2px solid #001A7A;
+    background-color: yellow; 
     border-radius: 6px;
     color: black;
     padding: 13px 30px;
-    font-family: serif;
+    font-family: 'Gill Sans MT';
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color:navy;
+    color:white;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    width: 96.15%;
+    height: 20px;
+    background-color: #001A7A;
+    padding-top: 50px;
+
 }
 
 .tooltip {

@@ -209,10 +209,11 @@ a:hover {
 }
 
 .footertext {
-      display: block;
-font-size: 18px;
-color: white;
+    display: block;
+    font-size: 18px;
+    color: white;
 }
+
 .donatebar {
   position: static;
   height: 45px;
