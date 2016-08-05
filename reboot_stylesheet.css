@@ -247,7 +247,8 @@ color: white;
 
 #map{
     width: 90%;
-    height: 550px;
+    height: 600px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
 }
