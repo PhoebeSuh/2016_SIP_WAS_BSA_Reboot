@@ -46,6 +46,7 @@
 	            '</div>'+
 	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.thedccenter.org/">The DC Center for the LGBT Community</a></h4>'+
 	            '<div id="bodyContent">'+
+	            '<p>2000 14th St NW #105</p>'+
 	            '</div>'+
 	            '</div>';
 	        var contentString2 = '<div id="content">'+
@@ -53,6 +54,47 @@
 	            '</div>'+
 	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.casaruby.org/">Casa Ruby</a></h4>'+
 	            '<div id="bodyContent">'+
+	            '<p>2822 Georgia Ave NW</p>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString3 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://youthpridealliance.org/">Youth Pride Alliance</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '<p>1700 14th St NW</p>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString4 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.smyal.org/">SMYAL</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '<p>410 7th St SE</p>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString5 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.glma.org/">GLMA</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '<p>1326 18th St NW #22</p>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString6 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://www.thetaskforce.org/">National LGBTQ Task Force</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '<p>1325 Massachusetts Ave NW #600</p>'+
+	            '</div>'+
+	            '</div>';
+	        var contentString7 = '<div id="content">'+
+	            '<div id="siteNotice">'+
+	            '</div>'+
+	            '<h4 id="firstHeading" class="firstHeading"><a href="http://pflagdc.org/">PFLAG</a></h4>'+
+	            '<div id="bodyContent">'+
+	            '<p>1828 L St NW #660</p>'+
 	            '</div>'+
 	            '</div>';
 	        
@@ -61,6 +103,21 @@
 	        });
 		var infowindow2 = new google.maps.InfoWindow({
 	          content: contentString2
+	        });
+	        var infowindow3 = new google.maps.InfoWindow({
+	          content: contentString3
+	        });
+	        var infowindow4 = new google.maps.InfoWindow({
+	          content: contentString4
+	        });
+	        var infowindow5 = new google.maps.InfoWindow({
+	          content: contentString5
+	        });
+	        var infowindow6 = new google.maps.InfoWindow({
+	          content: contentString6
+	        });
+	        var infowindow7 = new google.maps.InfoWindow({
+	          content: contentString7
 	        });
 		
 	        var marker1 = new google.maps.Marker({
@@ -71,6 +128,26 @@
 	            position: {lat:38.926752, lng:-77.023182},
 	            map: map,
 	        });
+	        var marker3 = new google.maps.Marker({
+	            position: {lat:38.912898, lng:-77.032248},
+	            map: map,
+	        });
+	        var marker4 = new google.maps.Marker({
+	            position: {lat:43.144843, lng:-93.194356},
+	            map: map,
+	        });
+	        var marker5 = new google.maps.Marker({
+	            position: {lat:38.908617, lng:-77.041905},
+	            map: map,
+	        });
+	        var marker6 = new google.maps.Marker({
+	            position: {lat:38.905417, lng:-77.030347},
+	            map: map,
+	        });
+	        var marker7 = new google.maps.Marker({
+	            position: {lat:40.768050, lng:-84.108601},
+	            map: map,
+	        });
 
 	        marker1.addListener('click', function() {
 	          infowindow1.open(map, marker1);
@@ -78,7 +155,21 @@
 	        marker2.addListener('click', function() {
 	          infowindow2.open(map, marker2);
 	        });
-	        
+	        marker3.addListener('click', function() {
+	          infowindow3.open(map, marker3);
+	        });
+	        marker4.addListener('click', function() {
+	          infowindow4.open(map, marker4);
+	        });
+	        marker5.addListener('click', function() {
+	          infowindow5.open(map, marker5);
+	        });
+	        marker6.addListener('click', function() {
+	          infowindow6.open(map, marker6);
+	        });
+	        marker7.addListener('click', function() {
+	          infowindow7.open(map, marker7);
+	        });
 	      }
 	    </script>
 	    <script async defer
